@@ -35,13 +35,8 @@ Este proyecto es mantenido y desarrollado por:
 
 ---
 
-## 🚀 Instalación Rápida
+## 🚀 Instalación 
 ```bash
-# Clonar el repositorio
-git clone [https://github.com/0xall3x/DeepOsint.git](https://github.com/0xall3x/DeepOsint.git)
-
-# Entrar al directorio
-cd DeepOsint
-
-# Instalar dependencias
-pip install -r requirements.txt
+chmod +x setup.sh
+./setup.sh
+source venv/bin/activate

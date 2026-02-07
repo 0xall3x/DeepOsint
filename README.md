@@ -31,7 +31,7 @@
 Este proyecto es mantenido y desarrollado por:
 
 * **0xall3x** - *Lead Developer & Architect* - [@0xall3x](https://github.com/0xall3x)
-* **veyron92i** - *Lead Developer & Researcher* - [@veyron921](https://github.com/veyron91i)
+* **veyron92i** - *Lead Developer & Researcher* - [@veyron92i](https://github.com/veyron92i)
 
 ---
 

@@ -16,10 +16,10 @@
 
 ---
 
-## 🛠 Sobre el Proyecto
+## Sobre el Proyecto
 **DeepOsint** es un orquestador de inteligencia de fuentes abiertas diseñado para centralizar y automatizar la recolección de datos masivos. Combina la potencia de herramientas consagradas con scripts personalizados de scraping y puentes hacia bots de Telegram.
 
-### ✨ Características Principales
+### Características Principales
 * **Multi-Tool Wrapper:** Ejecución integrada de herramientas como Sherlock, Maigret y más.
 * **Telegram Bridge:** Interfaz directa con bots de filtraciones y consultas.
 * **Advanced Web Scraping:** Peticiones `curl` personalizadas para evadir bloqueos básicos.
@@ -27,15 +27,15 @@
 
 ---
 
-## 👥 Autores
+## Autores
 Este proyecto es mantenido y desarrollado por:
 
-* **0xall3x** - *Lead Developer & Architect* - [@0xall3x](https://github.com/0xall3x)
-* **veyron92i** - *Lead Developer & Researcher* - [@veyron92i](https://github.com/veyron92i)
+* [@0xall3x](https://github.com/0xall3x)
+* [@veyron92i](https://github.com/veyron92i)
 
 ---
 
-## 🚀 Instalación 
+## Instalación 
 ```bash
 chmod +x setup.sh
 ./setup.sh

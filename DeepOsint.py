@@ -8,6 +8,7 @@ from utils.banner import print_banner
 from modules.username_tool import run_username
 from modules.email_tool import run_email
 from modules.leaks_tool import run_leaks
+from modules.domain_tool import run_domain
 
 console = Console()
 
@@ -28,6 +29,7 @@ def main():
     parser = argparse.ArgumentParser(description="DeepOsint - Massive Intelligence Tool")
     parser.add_argument("--username", help="Investigación de Redes + Instagram")
     parser.add_argument("--email", help="Investigación de Cuentas + Leaks")
+    parser.add_argument("--domain", help="Investigación de Dominio (subdominios, hosts, emails)")
     parser.add_argument("--session", help="Cookie sessionid de Instagram (opcional)", default=None)
     args = parser.parse_args()
 
@@ -51,8 +53,17 @@ def main():
         if found_l:
             console.print(table_l)
             save_report(args.email, "EMAIL_LEAKS", content_l)
+
+    elif args.domain:
+        console.print(f"[bold yellow][!] Iniciando Inteligencia de Dominio para: {args.domain}[/bold yellow]\n")
+        found_d, table_d, content_d = run_domain(args.domain, console)
+        if found_d:
+            console.print(table_d)
+            save_report(args.domain, "DOMAIN_INTEL", content_d)
+        else:
+            console.print("[red][!] No se encontró información relevante.")
     else:
-        console.print("[yellow]Uso: python DeepOsint.py --username <user> [--session <id>] | --email <email>[/yellow]")
+        console.print("[yellow]Uso: python DeepOsint.py --username <user> [--session <id>] | --email <email> | --domain <dominio>[/yellow]")
 
 if __name__ == "__main__":
     main()

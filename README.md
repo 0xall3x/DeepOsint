@@ -25,6 +25,7 @@
   * [Toutatis](https://github.com/megadose/toutatis) — inteligencia de perfiles de Instagram.
   * [Holehe](https://github.com/megadose/holehe) y [Socialscan](https://github.com/iojw/socialscan) — verificación de cuentas registradas por email.
   * [theHarvester](https://github.com/laramies/theHarvester) — recolección de subdominios, hosts y correos de un dominio.
+  * [Have I Been Pwned](https://haveibeenpwned.com/API/Key) — comprobación de filtraciones de datos conocidas asociadas a un email.
 * **Telegram Bridge:** Interfaz directa con bots de filtraciones y consultas.
 * **Advanced Web Scraping:** Peticiones `curl` personalizadas para evadir bloqueos básicos.
 * **Reportes Automáticos:** Exportación de hallazgos en formatos limpios (JSON/TXT).
@@ -45,6 +46,18 @@ chmod +x setup.sh
 ./setup.sh
 source venv/bin/activate
 ```
+
+---
+
+## Configuración
+
+El módulo de leaks usa la API oficial de [Have I Been Pwned](https://haveibeenpwned.com/API/Key). Necesitas una API key propia:
+
+```bash
+export HIBP_API_KEY="tu_api_key"
+```
+
+Sin esta variable, la búsqueda de leaks se omite automáticamente (el resto de módulos funcionan igual).
 
 ---
 
